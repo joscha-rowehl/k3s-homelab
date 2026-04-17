@@ -5,7 +5,7 @@ A lightweight Kubernetes cluster running on three Raspberry Pi 4B nodes, built f
 ## Hardware
 
 | Node | Role |
-|---|---|---|
+|---|---|
 | pi-master | Control Plane + Pi-hole (for personal use) |
 | pi-worker-1 | Worker |
 | pi-worker-2 | Worker |
