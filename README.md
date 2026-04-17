@@ -6,9 +6,9 @@ A lightweight Kubernetes cluster running on three Raspberry Pi 4B nodes, built f
 
 | Node | Role | IP |
 |---|---|---|
-| joschaspi | Control Plane + Pi-hole | 192.168.178.22 |
-| pi-worker-1 | Worker | 192.168.178.35 |
-| pi-worker-2 | Worker | 192.168.178.36 |
+| pi-master | Control Plane + Pi-hole (for personal use) |
+| pi-worker-1 | Worker |
+| pi-worker-2 | Worker |
 
 - Raspberry Pi 4B, 4GB RAM each
 - Raspberry Pi OS Lite 64-bit
@@ -18,16 +18,15 @@ A lightweight Kubernetes cluster running on three Raspberry Pi 4B nodes, built f
 
 - **K3s** v1.34.6 – lightweight Kubernetes distribution
 - **Prometheus + Grafana** – cluster monitoring
-- **Pi-hole** – network-wide DNS and ad blocking
 
 ## Setup
 
-Managed via SSH from PowerShell 7.6.0. SSH key authentication only, password login disabled.
+Managed via SSH from PowerShell. SSH key authentication only, password login disabled.
 
 ## Status
 
 - [x] K3s cluster (1 master, 2 workers)
 - [x] Prometheus + Grafana monitoring
 - [ ] First application workload
-- [ ] CI/CD Pipeline (GitHub Actions)
-- [ ] GitOps (ArgoCD)
+- [ ] CI/CD Pipeline
+- [ ] GitOps
